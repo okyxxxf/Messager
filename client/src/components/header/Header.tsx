@@ -1,19 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-
-const textVariants = {
-  hidden: {
-    pathLength: 0,
-  },
-  visible: {
-    pathLength: 1,
-
-    transition: {
-      duration: 2,
-      ease: "easeInOut",
-    },
-  },
-};
+import { textVariants } from "../../theme";
 
 export function Header() {
   return (
@@ -33,7 +20,7 @@ export function Header() {
         variants={{
           visible: {
             transition: {
-              staggerChildren: 0.5,
+              staggerChildren: 0.1,
             },
           },
         }}
