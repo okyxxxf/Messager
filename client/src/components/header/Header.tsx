@@ -25,6 +25,7 @@ export function Header() {
       h="100px"
       fontFamily="Jua"
       fontSize="64px"
+      color="mainWhite"
     >
       <motion.div
         initial="hidden"
@@ -45,6 +46,8 @@ export function Header() {
               display: "inline-block",
               marginRight: "0.25rem",
               cursor: "grabbing",
+              textShadow:
+                ".04em 0 #000, -.04em 0 #000, 0 .04em #000, 0 -.04em #000",
             }}
             drag
             dragConstraints={{
